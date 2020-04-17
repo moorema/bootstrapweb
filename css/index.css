@@ -1,0 +1,157 @@
+/*****************通用样式-begin****************/
+body{
+    color: #000;
+    height: 3000px;    
+}
+a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+/* 设置字体 */
+@font-face {
+    font-family: lk;
+    src: url('/fonts/lk.eot')  format('embedded-opertype'),
+    url('/fonts/lk.svg') format('svg'),
+    url('/fonts/lk.ttf') format('truetype'),
+    url('/fonts/lk.woff') format('woff')
+}
+[class^="icon-"],
+[class*=" icon-"]{
+    font-family: lk;
+    font-style: normal;
+}
+/*****************通用样式-end******************/
+
+
+
+
+/*****************头部样式-begin****************/
+#lk_header .top-bar{
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+/* 设置竖割线 */
+#lk_header .top-bar .container .row>div+div{
+    border-left: 1px solid #e0e0e0;
+}
+/* 二维码宽度 */
+#lk_header .top-bar .container .row .top-bar-1 .ewm{
+    width: 120px;
+}
+/* 父元素开启相对定位 */
+#lk_header .top-bar .container .row .top-bar-1 a{
+    position: relative;
+}
+/* 后代元素相对于父元素开绝对定位 并隐藏二维码*/
+#lk_header .top-bar .container .row .top-bar-1 a img{
+    position:absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);/* x轴向左偏移*/
+    z-index: 999;
+    display: none;/* 隐藏二维码*/
+
+}
+/* 开启 鼠标移入显示二维码显示*/
+#lk_header .top-bar .container .row .top-bar-1 a:hover img{
+    display: block;/*开启显示*/
+}
+/* 图标字体 */
+.icon-phone::before{
+    content: '\e958';
+    font-size: 13px;
+}
+/* 图标字体 */
+.icon-tel::before{
+    content: '\e942';
+    font-size: 13px;
+}
+
+#lk_header .navbar-lk{
+    border-bottom: 1px solid #e0e0e0;
+}
+#lk_header .navbar-lk .navbar-brand {
+    height: 50px;
+}
+#lk_header .navbar-lk .navbar-brand img{
+    width: 50px;
+    margin-left: 16px;
+    margin-right: 40px;
+}
+
+/* 导航条 */
+#lk_header .navbar-lk .navbar-nav>li>a{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+/* 导航条下面跟随竖线 */
+#lk_header .navbar-lk .navbar-nav>li>a:hover{
+    border-bottom: 1px solid purple;
+}
+/*****************头部样式-end******************/
+
+
+
+
+/*****************轮播图-begin****************/
+/* #lk_carousel{
+    /* background-color: green; 
+} 
+/* #lk_carousel .carousel-itm{
+    height: 410px;
+}#lk_carousel .carousel-itm img{
+    width: 100%;
+} */
+
+/*****************轮播图-end******************/
+
+
+
+
+/*****************热门课程-begin****************/
+
+
+/*****************热门课程-end******************/
+
+
+
+
+/*****************产品中心-begin****************/
+#lk_product{
+    /* background-color: goldenrod; */
+}
+/*****************产品中心-end******************/
+
+
+
+
+/*****************关于我们-begin****************/
+#lk_about{
+    /* background-color: skyblue; */
+}
+/*****************关于我们-end******************/
+
+
+
+
+/*****************友情链接-begin****************/
+#lk_link{
+    /* background-color: red; */
+}
+/*****************友情链接-end******************/
+
+
+
+
+/*****************尾部-begin****************/
+#lk_footer{
+    /* background-color: orange; */
+}
+/*****************尾部-end******************/
