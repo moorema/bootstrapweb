@@ -12,10 +12,10 @@ ul,ol{
 /* 设置字体 */
 @font-face {
     font-family: lk;
-    src: url('/fonts/lk.eot')  format('embedded-opertype'),
-    url('/fonts/lk.svg') format('svg'),
-    url('/fonts/lk.ttf') format('truetype'),
-    url('/fonts/lk.woff') format('woff')
+    src: url('fonts/lk.eot')  format('embedded-opertype'),
+    url('fonts/lk.svg') format('svg'),
+    url('fonts/lk.ttf') format('truetype'),
+    url('fonts/lk.woff') format('woff')
 }
 [class^="icon-"],
 [class*=" icon-"]{
