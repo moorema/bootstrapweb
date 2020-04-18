@@ -124,9 +124,27 @@ ul,ol{
 
 
 /*****************产品中心-begin****************/
+/* 产品中心容器背景间距 */
 #lk_product{
-    /* background-color: goldenrod; */
+    background-color: #f0f0f0;
+    padding:  40px 0;
 }
+/* 滑动条字体大小 */
+#lk_product .nav-item{
+    font-size: 18px;
+}
+/* 滑动条字体颜色 间距无边框  */
+#lk_product .nav-item a {
+    color: #000;
+    border: none;
+    padding:  10px 20px;
+}
+/* 滑动条加下划线+滑动颜色改成无 */
+#lk_product .nav-item a.active{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #8330f0;
+} 
 /*****************产品中心-end******************/
 
 
